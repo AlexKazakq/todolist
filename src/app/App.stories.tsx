@@ -1,13 +1,13 @@
-import React from 'react'
-import App from './App'
-import {BrowserProviderDecorator, ReduxStoreProviderDecorator} from "../stories/decorators/ReduxStoreProviderDecorator"
+import React from "react"
+import App from "./App"
+import {BrowserRouterDecorator, ReduxStoreProviderDecorator} from "../stories/decorators/ReduxStoreProviderDecorator"
 
 export default {
     title: 'App Stories',
     component: App,
-    decorators: [ReduxStoreProviderDecorator, BrowserProviderDecorator]
+    decorators: [ReduxStoreProviderDecorator, BrowserRouterDecorator]
 }
 
-export const AppBaseExample = (props: any) => {
+export const AppBaseExample = () => {
     return (<App demo={true} />)
 }
