@@ -147,6 +147,8 @@ export const UpdateTask = () => {
     const [description, setDescription] = useState<string>('descripton 1')
     const [status, setStatus] = useState<number>(0)
     const [priority, setPriority] = useState<number>(0)
+    const [startDate, setStartDate] = useState<string>('')
+    const [deadline, setDeadline] = useState<string>('')
 
     const [todolistId, setTodolistId] = useState<string>('')
     const [taskId, setTaskId] = useState<string>('')
