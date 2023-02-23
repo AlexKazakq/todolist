@@ -1,12 +1,13 @@
-import React from "react"
-import {Button, Checkbox, FormControl, FormControlLabel, FormGroup, FormLabel, Grid, TextField} from "@material-ui/core"
-import {FormikHelpers, useFormik} from "formik"
-import {useSelector} from "react-redux"
-import {login} from "./auth-reducer"
-import {Redirect} from "react-router-dom"
-import {selectIsLoggedIn} from "./selectors"
-import {authActions} from "./index"
-import {useAppDispatch} from "../../utils/redux-utils"
+import React from 'react'
+import {Button, Checkbox, FormControl, FormControlLabel, FormGroup, FormLabel, Grid, TextField} from '@material-ui/core'
+import {FormikHelpers, useFormik} from 'formik'
+import {useSelector} from 'react-redux'
+import {login} from './auth-reducer'
+import {Redirect} from 'react-router-dom'
+import {selectIsLoggedIn} from './selectors'
+import {authActions} from './index'
+import {Action} from 'redux'
+import {useActions, useAppDispatch} from '../../utils/redux-utils'
 
 type FormValuesType = {
     email: string
